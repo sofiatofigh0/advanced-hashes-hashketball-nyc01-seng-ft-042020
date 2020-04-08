@@ -86,10 +86,11 @@ end
 
 
 
- 
  def big_shoe_rebounds
+  
   bigshoesize=0
   rebounds=0
+ 
    game_hash.each do |home_or_away,stats|
     stats[:players].each do |more_info|
      if more_info[:shoe] > bigshoesize
@@ -99,4 +100,11 @@ end
     end
    end
   return rebounds
- end
+end
+
+ 
+ 
+
+ 
+       
+      
